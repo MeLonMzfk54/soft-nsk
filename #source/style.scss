@@ -28,6 +28,136 @@ $Raleway: 'Raleway', sans-serif;
     overflow: hidden;
     min-height: 100%;
     width: 100%;
+    font-family: $lato;
+}
+
+.header {
+    position: fixed;
+    background: rgba(16, 16, 29, 0.9);
+    width: 100vw;
+    padding: 32px 0px;
+    top: 0;
+    left: 0;
+    // .header__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__logo
+
+    &__logo {
+        font-family: $Raleway;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 33px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        span{
+            color: #42A9ED;
+        }
+    }
+
+    // .header__menu
+
+    &__menu {
+    }
+
+    // .header__link
+
+    &__link {
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+        margin-right: 60px;
+        transition: all .4s ease;
+        &:hover{
+            color: #43ABF0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    // .header__burger
+
+    &__burger {
+        cursor: pointer;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        @include hidden;
+        div{
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            background: #fff;
+            // left: 5px;
+            &:nth-child(1){
+                top: 8px;
+            }
+            &:nth-child(2){
+                top: 15px;
+            }
+            &:nth-child(3){
+                top: 22px;
+            }
+        }
+    }
+    @media(max-width:700px){
+        &__menu{
+            background: rgba(16, 16, 29, 0.9);
+            position: fixed;
+            padding-top: 50px;
+            top: 0px;
+            width: 110vw;
+            height: 100vh;
+            left: -15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: -110vh;
+            transition: all .3s linear;
+            &.active{
+                top: 0;
+            }
+        }
+        &__link{
+            margin-right: 0;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        &__burger{
+            @include visible;
+            &.active{
+                div{
+                    transition: all 1s ease;
+                    &:nth-child(1){
+                        top: 15px;
+                        transform: rotate(225deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        top: 15px;
+                        transform: rotate(-225deg);
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:400px){
+        &__logo{
+            font-size: 23px;
+        }
+    }
 }
 
 
