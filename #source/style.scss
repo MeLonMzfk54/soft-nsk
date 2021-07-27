@@ -1,0 +1,47 @@
+@import "null.scss";
+
+@import "mixins.scss";
+/*ПЕРЕМЕННЫЕ------------------------------------------------------------------------*/
+
+/*ширина контейнера*/
+$maxWidthContainer: 1197px;
+/*Отступы у контейнера*/
+$paddingContainer: 0px 15px;
+/*Максимальная ширина*/
+$maxWidth: 1920;
+/*Минимальная ширина*/
+$minWidth: 320;
+
+
+// FONTS
+$lato:'Lato', sans-serif;
+$Raleway: 'Raleway', sans-serif;
+
+/*КОНТЕЙНЕР------------------------------------------------------------------------*/
+.container{
+    max-width: $maxWidthContainer;
+    padding: $paddingContainer;
+    margin: 0 auto;
+}
+/*ВРАППЕР------------------------------------------------------------------------*/
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
