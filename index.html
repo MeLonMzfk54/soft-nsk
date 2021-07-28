@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lorem</title>
-  <link rel="stylesheet" href="css/style.css">
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="wrapper">
@@ -30,6 +31,7 @@
         </div>
       </div>
     </header>
+
     <section class="lorem">
       <div class="container">
         <div class="lorem__inner">
@@ -48,9 +50,74 @@
         </div>
       </div>
     </section>
+
+    <section class="order">
+      <div class="container">
+        <div class="order__inner">
+          <h1 class="order__title">Оформление &nbsp;<span>Заказа</span></h1>
+          <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+          <div class="order__schema">
+            <div class="order__item">
+              <div class="order__icon">
+                <img src="img/icon1.png" alt="">
+              </div>
+              <div class="order__desc">Lorem ipsum dolor
+                sit amet</div>
+            </div>
+            <div class="order__item">
+              <div class="order__icon">
+                <img src="img/icon2.png" alt="">
+              </div>
+              <div class="order__desc">Сonsecteturadipiscing elit</div>
+            </div>
+            <div class="order__item">
+              <div class="order__icon">
+                <img src="img/icon3.png" alt="">
+              </div>
+              <div class="order__desc">Sed do eiusmod tempor</div>
+            </div>
+            <div class="order__item">
+              <div class="order__icon">
+                <img src="img/icon4.png" alt="">
+              </div>
+              <div class="order__desc">Esse cillum dolore eu fugiat</div>
+            </div>
+            <div class="order__item">
+              <div class="order__icon">
+                <img src="img/icon5.png" alt="">
+              </div>
+              <div class="order__desc">Excepteur sint occaecat <br> cupidatat non proident</div>
+            </div>
+          </div>
+          <div class="order__block">
+            <form action="#" class="order__form">
+              <div class="order__row">
+                <div class="order__wrapper">
+                  <select id="sel" class="order__select">
+                    <option value="" disabled selected>Выберите тип системы</option>
+                    <option value="Sed">Sed ut perspiciatis</option>
+                    <option value="Nemo">Nemo enim ipsam</option>
+                    <option value="Et">Et harum quidem</option>
+                    <option value="Tempo">Temporibus autem</option>
+                    <option value="Itaq">Itaque earum rerum</option>
+                    <option value="Ita">Itaque earum rerum</option>
+                    <option value="It">Itaque earum rerum</option>
+                    
+                  </select>
+                  <div class="order__arrow"></div>
+                </div>
+                <input type="email" class="order__email order__inp" placeholder="Ваш e-mail">
+                <input type="text" class="order__name order__inp" placeholder="Ваше имя">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
