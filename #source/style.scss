@@ -414,33 +414,35 @@ $Raleway: 'Raleway', sans-serif;
         display: flex;
         justify-content: space-between;
     }
-
     &__wrapper{
         position: relative;
-        background: rgba(255, 255, 255, 0.85);
-        border: 1px solid #FFFFFF;
-        border-radius: 3px;
-        width: 370px;
-        height: 48px;
-        &.active{
-            background: rgba(61, 64, 80, 0.85);
-            border: none;
-            select{
-                color: white;
-                option{
-                    background: #272733;
-                    color: white;
-                    &:hover,
-                    &:focus,
-                    &:active{
-                        box-shadow: 0 0 10px 100px orange inset;
-                        background: #272733;
-                        color: #42A9ED;
-                    }
-                }
-            }
-        }
     }
+    // &__wrapper{
+    //     position: relative;
+    //     background: rgba(255, 255, 255, 0.85);
+    //     border: 1px solid #FFFFFF;
+    //     border-radius: 3px;
+    //     width: 370px;
+    //     height: 48px;
+    //     &.active{
+    //         background: rgba(61, 64, 80, 0.85);
+    //         border: none;
+    //         select{
+    //             color: white;
+    //             option{
+    //                 background: #272733;
+    //                 color: white;
+    //                 &:hover,
+    //                 &:focus,
+    //                 &:active{
+    //                     box-shadow: 0 0 10px 100px orange inset;
+    //                     background: #272733;
+    //                     color: #42A9ED;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     &__arrow{
         position: absolute;
         width: 20px;
@@ -477,7 +479,7 @@ $Raleway: 'Raleway', sans-serif;
 
     // .order__select
     &__select {
-        position: absolute;
+         position: relative;
         width: 370px;
         height: 48px;
         background: transparent;
@@ -490,6 +492,21 @@ $Raleway: 'Raleway', sans-serif;
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
+        &.active{
+            background: rgba(61, 64, 80, 0.85);
+            border: none;
+                color: white;
+                option{
+                    background: #272733;
+                    color: white;
+                    &:hover,
+                    &:focus,
+                    &:active{
+                        background: #272733;
+                        color: #42A9ED;
+                    }
+                }
+        }
     }
 
     // .order__inp
@@ -526,6 +543,120 @@ $Raleway: 'Raleway', sans-serif;
     &__email {
     }
 }
+
+.footer {
+    background: #3D4050;
+    padding: 30px 0;
+    // .footer__inner
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__column
+
+    &__column {
+        display: flex;
+        border-right: 1px solid #c3c3c3;
+        padding-right: 40px;
+        &:last-child{
+            padding-right: 0;
+            border: none;
+        }
+
+    }
+
+    // .footer__desc
+
+    &__desc {
+        font-style: normal;
+        font-weight: normal;
+        @include adaptiv-font(1920,13,12);
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        span{
+            text-transform: uppercase;
+        }
+    }
+
+    // .footer__pays
+
+    &__pays {
+        display: flex;
+    }
+
+    // .footer__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+        margin-right: 38px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    // .footer__pay
+
+    &__pay {
+        color: #C3C3C3;
+    }
+
+    // .footer__icon
+
+    &__icon {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // .footer__name
+
+    &__name {
+    }
+    @media(max-width:1146px){
+        &__inner{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__column{
+            border: none;
+            padding-right: 0;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media(max-width:424px){
+        &__pays{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item{
+            margin: 0;
+        }
+        &__pay{
+            margin-bottom: 10px;
+        }
+        &__social{
+            margin-right: 10px;
+        }
+    }
+}
+
 
 
 

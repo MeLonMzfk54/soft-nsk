@@ -6,16 +6,16 @@ $(document).ready(function(){
         $(".header__menu").toggleClass("active");
     });
 
-    $(".order__wrapper").on('click',function(){
+    $("#sel").on('click',function(){
         $(".order__arrow").toggleClass("active");
         $(this).toggleClass("active");
     });
 
     $("#sel").on("focusout",function(){
-        $("#sel").removeAttr("size");
-        $("#sel").css("padding-top","0px");
+        $(this).removeAttr("size");
+        $(this).css("padding-top","0px");
         $(".order__arrow").removeClass("active");
-        $('.order__wrapper').removeClass("active");
+        $(this).removeClass("active");
     });
 
 });
