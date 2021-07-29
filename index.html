@@ -21,7 +21,7 @@
             <a href="#" class="header__link">Бизнес</a>
             <a href="#" class="header__link">О нас</a>
             <a href="#" class="header__link">Цены</a>
-            <a href="#" class="header__link">Оформить заказ</a>
+            <a href="#" class="header__link scroll__link" data-scroll="#order">Оформить заказ</a>
           </nav>
           <div class="header__burger">
             <div></div>
@@ -51,7 +51,7 @@
       </div>
     </section>
 
-    <section class="order">
+    <section class="order" id="order">
       <div class="container">
         <div class="order__inner">
           <h1 class="order__title">Оформление &nbsp;<span>Заказа</span></h1>
@@ -92,9 +92,9 @@
           <div class="order__block">
             <form action="#" class="order__form">
               <div class="order__row">
-                <div class="order__wrapper">
+                <div class="order__wrapper order__wrapper_select">
                   <select id="sel" class="order__select order__inp">
-                    <option value="" disabled selected>Выберите тип системы</option>
+                    <option value="null" disabled selected>Выберите тип системы</option>
                     <option value="Sed">Sed ut perspiciatis</option>
                     <option value="Nemo">Nemo enim ipsam</option>
                     <option value="Et">Et harum quidem</option>
@@ -108,6 +108,25 @@
                 <input type="email" class="order__email order__inp" placeholder="Ваш e-mail">
                 <input type="text" class="order__name order__inp" placeholder="Ваше имя">
               </div>
+              <div class="order__row">
+                <div class="order__percents">
+                  <div class="order__text">
+                    <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                    <p class="order__res">75 %</p>
+                  </div>
+                  <input type="range" class="order__range" value="50" max="100" min="0">
+                </div>
+                <div class="order__wrapper order__wrapper_file">
+                  <input name="file" type="file" name="file" id="order__file" class="order__file" multiple>
+                  <label for="order__file" class="order__file_button">
+                     <span class="order__file_icon_wrapper"><img class="order__file_icon" src="img/file.svg" alt="Прикрепить файл"></span>
+                     <span class="order__file_button_text">Прикрепить <br> файл</span>
+                  </label>
+               </div>
+              </div>
+              <div class="order__row order__row_center">
+                  <input class="order__confirm" type="submit" value="Отправить">
+              </div>
             </form>
           </div>
         </div>
@@ -118,7 +137,7 @@
       <div class="container">
         <div class="footer__inner">
           <div class="footer__column">
-            <p class="footer__desc"><span>© 2018 «LoremIpsum.net» </span> Все права защищены.</p>
+            <p class="footer__desc"><span>© 2018 «LoremIpsum.net»</span>&nbsp;Все права защищены.</p>
           </div>
           <div class="footer__column">
             <div class="footer__pays">
