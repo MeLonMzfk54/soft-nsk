@@ -5,16 +5,6 @@ $(document).ready(function(){
         $(".header__menu").toggleClass("active");
     });
 
-    $("#sel").on('click',function(){              
-        $(".order__arrow").toggleClass("active");
-        $(this).toggleClass("active");
-    });
-
-    $("#sel").on("focusout",function(){
-        $(".order__arrow").removeClass("active");
-        $(this).removeClass("active");
-    });
-
     $(".scroll__link").on('click',function(e){
         e.preventDefault();
         let top = $($(this).attr("data-scroll")).offset().top;
@@ -27,4 +17,5 @@ $(document).ready(function(){
     $(".order__range").on("input change",function(){
         $(".order__res").html($(this).val() + " %");
     });
+    
 });

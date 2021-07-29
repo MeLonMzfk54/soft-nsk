@@ -92,7 +92,7 @@
           <div class="order__block">
             <form action="#" class="order__form">
               <div class="order__row">
-                <div class="order__wrapper order__wrapper_select">
+                <!-- <div class="order__wrapper order__wrapper_select">
                   <select id="sel" class="order__select order__inp">
                     <option value="null" disabled selected>Выберите тип системы</option>
                     <option value="Sed">Sed ut perspiciatis</option>
@@ -104,6 +104,18 @@
                     <option value="It">Itaque earum rerum</option>
                   </select>
                   <div class="order__arrow"></div>
+                </div> -->
+                <div class="order__select">
+                  <select>
+                    <option value="0" disabled selected>Выберите тип системы</option>
+                    <option value="1">Sed ut perspiciatis</option>
+                    <option value="2">Nemo enim ipsam</option>
+                    <option value="3">Et harum quidem</option>
+                    <option value="4">Temporibus autem</option>
+                    <option value="5">Itaque earum rerum</option>
+                    <option value="6">Itaque earum rerum</option>
+                    <option value="7">Itaque earum rerum</option>
+                  </select>
                 </div>
                 <input type="email" class="order__email order__inp" placeholder="Ваш e-mail">
                 <input type="text" class="order__name order__inp" placeholder="Ваше имя">
@@ -114,7 +126,7 @@
                     <p>Sed ut perspiciatis, unde omnis iste natus</p>
                     <p class="order__res">75 %</p>
                   </div>
-                  <input type="range" class="order__range" value="50" max="100" min="0">
+                  <input type="range" class="order__range" value="75" max="100" min="0">
                 </div>
                 <div class="order__wrapper order__wrapper_file">
                   <input name="file" type="file" name="file" id="order__file" class="order__file" multiple>
@@ -172,6 +184,7 @@
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="js/select.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
