@@ -381,6 +381,9 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.order_mg {
+  margin-bottom: 5px;
+}
 .order__title {
   text-align: center;
   font-style: normal;
@@ -722,7 +725,6 @@ img {
 .order__inp {
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid #FFFFFF;
-  margin-bottom: 5px;
   border-radius: 3px;
   width: 370px;
   height: 48px;

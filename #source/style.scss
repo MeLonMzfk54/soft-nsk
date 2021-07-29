@@ -306,6 +306,9 @@ $Raleway: 'Raleway', sans-serif;
     background-image: url("../img/map.png");
     background-size: cover;
     background-repeat: no-repeat;
+    &_mg{
+        margin-bottom: 5px;
+    }
     // .order__inner
 
     &__inner {
@@ -621,7 +624,6 @@ $Raleway: 'Raleway', sans-serif;
     &__inp {
         background: rgba(255, 255, 255, 0.85);
         border: 1px solid #FFFFFF;
-        margin-bottom: 5px;
         border-radius: 3px;
         width: 370px;
         height: 48px;
